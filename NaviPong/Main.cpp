@@ -64,9 +64,16 @@ LRESULT CALLBACK WndProc(HWND hwnd, UINT msg, WPARAM wParam, LPARAM lParam) {
         }
         return 0;
 
+
     case WM_LBUTTONDOWN:
         if (g_game) {
-            g_game->Swing();  // 클릭으로 스윙
+            g_game->SetMouseDown();
+        }
+        return 0;
+
+    case WM_LBUTTONUP:
+        if (g_game) {
+            g_game->SetMouseUp();
         }
         return 0;
 

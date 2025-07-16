@@ -1,5 +1,8 @@
+
 #pragma once
 #include <d2d1.h>
+#include <cmath>
+#include "GameConst.h"
 
 class Paddle {
 public:
@@ -7,13 +10,28 @@ public:
     D2D1_RECT_F GetRect() const;
     void UpdateFromMouse(int x);
     void Swing();
-    void Update(float dt);
+    void Update(float dt, float ballVx = 0.0f, float ballVy = -1.0f);
+    void SetPulling(bool pulling);
     bool swinging = false;
     float swingTimer = 0.0f;
-    float angle = 0.0f; // paddleì˜ ê°ë„(ë¼ë””ì•ˆ)
+    float angle = 0.0f; // paddleÀÇ °¢µµ(¶óµğ¾È)
+    float pullAmount = 0.0f;
+    bool isPulling = false;
+    float pullOffset = 0.0f;      // ½Ã°¢Àû/¹°¸®Àû ÆĞµé ´ç±è
+    float pullVelocity = 0.0f;    // º¹±Í½Ã Åº¼º È¿°ú
+    const float maxPull = 40.0f;  // ÃÖ´ë ´ç±è °Å¸®
+    const float pullSpeed = 120.0f; // ´ç±æ ¶§ ¼Óµµ
+    const float returnStiffness = 400.0f; // º¹±Í Åº¼º
+    const float returnDamping = 10.0f;    // °¨¼è
 
-private:
+protected:
     float x, y;
-    float width = 80.0f;   // ê°€ë¡œë¡œ ë„“ê²Œ
-    float height = 10.0f;  // ì–‡ê²Œ
+    float width = 80.0f;   // °¡·Î±æÀÌ
+    float height = 10.0f;  // ¼¼·Î±æÀÌ
+};
+
+class NpcPaddle : public Paddle {
+public:
+    NpcPaddle(float x, float y) : Paddle(x, y) {}
+    void UpdateAI(float dt, float ballX, float ballY, float ballVx, float ballVy);
 };

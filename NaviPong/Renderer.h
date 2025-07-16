@@ -20,6 +20,7 @@ public:
     void DrawUI();
 
     void DrawEntities(const std::vector<Entity2D>& entities);
+    void DrawLayers(const Ball& ball, const Paddle& player, const NpcPaddle* npc);
 
 private:
     ID2D1Factory* pFactory = nullptr;
