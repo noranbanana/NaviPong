@@ -1,0 +1,17 @@
+﻿  Ball.cpp
+C:\Users\MSI\source\repos\NaviPong\NaviPong\Ball.cpp(1,10): fatal error C1083: 미리 컴파일된 헤더 파일을 열 수 없습니다. 'Debug\NaviPong.pch': No such file or directory
+  Game.cpp
+C:\Users\MSI\source\repos\NaviPong\NaviPong\Game.cpp(2,10): fatal error C1083: 미리 컴파일된 헤더 파일을 열 수 없습니다. 'Debug\NaviPong.pch': No such file or directory
+  GameThreads.cpp
+C:\Users\MSI\source\repos\NaviPong\NaviPong\GameThreads.cpp(3,10): fatal error C1083: 미리 컴파일된 헤더 파일을 열 수 없습니다. 'Debug\NaviPong.pch': No such file or directory
+  Layer3D2D.cpp
+C:\Users\MSI\source\repos\NaviPong\NaviPong\Layer3D2D.cpp(1,10): fatal error C1083: 미리 컴파일된 헤더 파일을 열 수 없습니다. 'Debug\NaviPong.pch': No such file or directory
+  Main.cpp
+C:\Users\MSI\source\repos\NaviPong\NaviPong\Main.cpp(1,10): fatal error C1083: 미리 컴파일된 헤더 파일을 열 수 없습니다. 'Debug\NaviPong.pch': No such file or directory
+  Paddle.cpp
+C:\Users\MSI\source\repos\NaviPong\NaviPong\Paddle.cpp(1,10): fatal error C1083: 미리 컴파일된 헤더 파일을 열 수 없습니다. 'Debug\NaviPong.pch': No such file or directory
+  pch.cpp
+C:\Users\MSI\source\repos\NaviPong\NaviPong\pch.cpp(1,10): fatal error C1083: 미리 컴파일된 헤더 파일을 열 수 없습니다. 'Debug\NaviPong.pch': No such file or directory
+  Renderer.cpp
+C:\Users\MSI\source\repos\NaviPong\NaviPong\Renderer.cpp(4,10): fatal error C1083: 미리 컴파일된 헤더 파일을 열 수 없습니다. 'Debug\NaviPong.pch': No such file or directory
+  코드를 생성하고 있습니다...
