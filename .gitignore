@@ -43,3 +43,5 @@ Release/
 
 # debug information files
 *.dwo
+.vs/NaviPong/v16
+NaviPong/Debug/
